@@ -23,6 +23,7 @@
   </head>
   <body>
       <h1>京都舞坂</h1>
+      <h2>テーブル番号：１</h2>
       <input type="image" src="img/cart.jpg" id="cartImg" value="cart"><br><br><br>
       <input type="button" class="menuButton" id="menuBT1" value="定食">
       <input type="button" class="menuButton" id="menuBT2" value="うな重">
@@ -36,21 +37,28 @@
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;価格：4,000円<br>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;詳細説明：うな重、味噌汁
         </div>
-        <div>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="image" value="amountDown" style="width:10%; height:10%;" src="img/amountDown.png" onclick="amountDown('text1')">
-          <input type="text" id="text1" value="1" readonly="true">
-          <input type="image" value="amountUp" style="width:10%; height:10%;" src="img/amountUp.jpg" onclick="amountUp('text1')">
+          <div>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="image" value="amountDown" style="width:3%; height:3%;" src="img/amountDown.png" onclick="amountDown('text1')">
+          <input type="text" id="text1" value="0" readonly="true">
+          <input type="image" value="amountUp" style="width:3%; height:3%;" src="img/amountUp.jpg" onclick="amountUp('text1')">
           </div>
           <div><input type="button" name="" value="選択"></div>
 
       </div>
 
-      <br><br><br><br><br><br>
+      <br>
+      <div id="grid">
       <input type="image" class="menuImg" src="img/うな重松_1x.jpg">
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;商品名：うな重　松<br>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;価格：3,500円<br>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;詳細説明：うな重、味噌汁<br>
-
+      <div>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="image" value="amountDown" style="width:3%; height:3%;" src="img/amountDown.png" onclick="amountDown('text1')">
+      <input type="text" id="text2" value="0" readonly="true">
+      <input type="image" value="amountUp" style="width:3%; height:3%;" src="img/amountUp.jpg" onclick="amountUp('text2')">
+      </div>
+      <div><input type="button" name="" value="選択"></div>
+      </div>
 
 
 
