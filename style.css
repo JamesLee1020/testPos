@@ -3,12 +3,13 @@ h1{
 }
 h2{
   display: inline;
-  margin-left: 70%;
+  margin-left: 50px;
 }
 #cartImg{
   width: 7%;
   height: 7%;
   margin-left: 40%;
+  margin-right: 10px
 }
 .menuButton{
   width: 200px;
