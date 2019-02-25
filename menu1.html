@@ -4,6 +4,22 @@
     <meta charset="utf-8">
     <title>舞坂メニュー</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+      function amountDown(textId){
+        var amountText = document.getElementById(textId);
+        var originNum = Number(amountText.value);
+        if(originNum > 1){
+          amountText.value = String(originNum-1);
+        }
+      }
+      function amountUp(textId){
+        var amountText = document.getElementById(textId);
+        var originNum = Number(amountText.value);
+        if(originNum < 9){
+          amountText.value = String(originNum+1);
+        }
+      }
+    </script>
   </head>
   <body>
       <h1>京都舞坂</h1>
@@ -12,14 +28,30 @@
       <input type="button" class="menuButton" id="menuBT2" value="うな重">
       <input type="button" class="menuButton" id="menuBT3" value="スッポン">
       <input type="button" class="menuButton" id="menuBT4" value="飲み物"><br><br>
-      <input type="image" class="menuImg" src="img/うな重竹_1x.jpg">
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;商品名：うな重 竹<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;価格：4,000円<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;詳細説明：うな重、味噌汁<br><br><br><br><br><br>
+
+      <div id="grid">
+        <div><input type="image" class="menuImg" src="img/うな重竹_1x.jpg"></div>
+        <div style="display:inline;">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;商品名：うな重 竹<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;価格：4,000円<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;詳細説明：うな重、味噌汁
+        </div>
+        <div>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="image" value="amountDown" style="width:10%; height:10%;" src="img/amountDown.png" onclick="amountDown('text1')">
+          <input type="text" id="text1" value="1" readonly="true">
+          <input type="image" value="amountUp" style="width:10%; height:10%;" src="img/amountUp.jpg" onclick="amountUp('text1')">
+          </div>
+          <div><input type="button" name="" value="選択"></div>
+
+      </div>
+
+      <br><br><br><br><br><br>
       <input type="image" class="menuImg" src="img/うな重松_1x.jpg">
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;商品名：うな重　松<br>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;価格：3,500円<br>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;詳細説明：うな重、味噌汁<br>
+
+
 
 
 
