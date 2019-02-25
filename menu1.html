@@ -8,7 +8,7 @@
       function amountDown(textId){
         var amountText = document.getElementById(textId);
         var originNum = Number(amountText.value);
-        if(originNum > 1){
+        if(originNum >= 1){
           amountText.value = String(originNum-1);
         }
       }
