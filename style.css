@@ -41,3 +41,16 @@ h1{
   display:grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+
+.amountText{
+  width: 15px;
+}
+
+.amountDownBtn{
+  width: 15%;
+  height: 15%;
+}
+ .amountUpBtn{
+   width: 15%;
+   height: 15%;
+ }
