@@ -1,0 +1,38 @@
+h1{
+  display: inline;
+}
+#cartImg{
+  width: 7%;
+  height: 7%;
+  position: absolute;
+  right: 5%;
+}
+.menuButton{
+  width: 200px;
+}
+#menuBT1{
+  background-color: #1a1aff;
+  color: white;
+  font-size: 20px;
+}
+#menuBT2{
+  font-size: 20px;
+  color: white;
+  background-color: #1a1aff;
+  opacity: 0.3;
+}
+#menuBT3{
+  color: white;
+  font-size: 20px;
+  background-color: #1a1aff;
+  opacity: 0.3;
+}
+#menuBT4{
+  color: white;
+  font-size: 20px;
+  background-color: #1a1aff;
+  opacity: 0.3;
+}
+.menuImg{
+  float:left;
+}
