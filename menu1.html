@@ -23,7 +23,9 @@
   </head>
   <body>
       <h1>京都舞坂</h1>
+      <div style="display:inline">
       <h2>テーブル番号：１</h2>
+      </div>
       <input type="image" src="img/cart.jpg" id="cartImg" value="cart"><br><br><br>
       <input type="button" class="menuButton" id="menuBT1" value="定食">
       <input type="button" class="menuButton" id="menuBT2" value="うな重">
@@ -32,32 +34,34 @@
 
       <div id="grid">
         <div><input type="image" class="menuImg" src="img/うな重竹_1x.jpg"></div>
-        <div style="display:inline;">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;商品名：うな重 竹<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;価格：4,000円<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;詳細説明：うな重、味噌汁
+        <div class="productInfo">
+          商品名：うな重 竹<br>
+          価格：4,000円<br>
+          詳細説明：うな重、味噌汁
         </div>
           <div>
             <input type="image" value="amountDown" class="amountDownBtn" src="img/amountDown.png" onclick="amountDown('text1')">
             <input type="text" class="amountText" id="text1" value="0" readonly="true">
             <input type="image" value="amountUp" class="amountUpBtn" src="img/amountUp.jpg" onclick="amountUp('text1')">
           </div>
-          <div><input type="button" name="" value="選択"></div>
+          <div><input type="button" class="choiceBtn" value="選択"></div>
 
       </div>
 
       <br>
       <div id="grid">
-      <input type="image" class="menuImg" src="img/うな重松_1x.jpg">
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;商品名：うな重　松<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;価格：3,500円<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;詳細説明：うな重、味噌汁<br>
-      <div>
-      <input type="image" value="amountDown" class="amountDownBtn" src="img/amountDown.png" onclick="amountDown('text2')">
-      <input type="text" class="amountText" id="text2" value="0" readonly="true">
-      <input type="image" value="amountUp" class="amountUpBtn" src="img/amountUp.jpg" onclick="amountUp('text2')">
-      </div>
-      <div><input type="button" name="" value="選択"></div>
+        <input type="image" class="menuImg" src="img/うな重松_1x.jpg">
+        <div class="productInfo">
+          商品名：うな重　松<br>
+          価格：3,500円<br>
+          詳細説明：うな重、味噌汁<br>
+        </div>
+        <div>
+          <input type="image" value="amountDown" class="amountDownBtn" src="img/amountDown.png" onclick="amountDown('text2')">
+          <input type="text" class="amountText" id="text2" value="0" readonly="true">
+          <input type="image" value="amountUp" class="amountUpBtn" src="img/amountUp.jpg" onclick="amountUp('text2')">
+        </div>
+        <div><input type="button" class="choiceBtn" value="選択"></div>
       </div>
 
 
