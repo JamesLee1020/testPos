@@ -4,8 +4,7 @@ h1{
 #cartImg{
   width: 7%;
   height: 7%;
-  position: absolute;
-  right: 5%;
+margin-left: 50%;
 }
 .menuButton{
   width: 200px;
